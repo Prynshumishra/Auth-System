@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #0a0f1e;
+    color: #e2e8f0;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(20, 184, 166, 0.2);
+  }
+
+  .glass-input {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(20, 184, 166, 0.25);
+    transition: all 0.3s ease;
+  }
+
+  .glass-input:focus {
+    border-color: rgba(20, 184, 166, 0.7);
+    box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.1);
+    outline: none;
+  }
+
+  .btn-teal {
+    background: linear-gradient(135deg, #0d9488, #14b8a6);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(20, 184, 166, 0.3);
+  }
+
+  .btn-teal:hover {
+    background: linear-gradient(135deg, #14b8a6, #2dd4bf);
+    box-shadow: 0 6px 30px rgba(20, 184, 166, 0.5);
+    transform: translateY(-1px);
+  }
+
+  .btn-teal:active {
+    transform: translateY(0);
+  }
+
+  .wave-bg {
+    background: linear-gradient(135deg, #0a3d3d 0%, #0d5c5c 40%, #0a4040 70%, #083333 100%);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px rgba(20, 184, 166, 0.5);
+  }
+
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-5 { animation-delay: 0.5s; }
+}
