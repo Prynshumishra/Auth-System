@@ -109,7 +109,7 @@ const Login = () => {
               <InputField
                 name="email"
                 type="email"
-                placeholder="username / email"
+                placeholder="username"
                 value={form.email}
                 onChange={handleChange}
                 error={errors.email}
