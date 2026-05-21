@@ -56,32 +56,54 @@ const Register = () => {
   };
 
   return (
-    <div className="min-h-screen wave-bg relative flex items-center justify-center p-4 overflow-hidden">
+    <div
+      className="min-h-screen relative flex items-center justify-center p-4 overflow-hidden"
+      style={{ background: 'linear-gradient(160deg, #0e9f9f 0%, #14b8a6 40%, #0d9488 100%)' }}
+    >
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-1/3 -right-1/4 w-[700px] h-[700px] rounded-full opacity-20"
-          style={{ background: 'radial-gradient(circle, rgba(20,184,166,0.4) 0%, transparent 70%)' }} />
-        <div className="absolute -bottom-1/3 -left-1/4 w-[500px] h-[500px] rounded-full opacity-15"
-          style={{ background: 'radial-gradient(circle, rgba(6,182,212,0.3) 0%, transparent 70%)' }} />
-        <svg className="absolute bottom-0 left-0 w-full opacity-10" viewBox="0 0 1440 200" preserveAspectRatio="none">
-          <path fill="rgba(20,184,166,0.3)" d="M0,60 C480,140 960,0 1440,80 L1440,200 L0,200 Z" />
+        <svg className="absolute bottom-0 left-0 w-full" viewBox="0 0 1440 260" preserveAspectRatio="none">
+          <path fill="rgba(0,0,0,0.08)" d="M0,160 C360,260 1080,60 1440,160 L1440,260 L0,260 Z" />
         </svg>
+        <svg className="absolute bottom-0 left-0 w-full" viewBox="0 0 1440 260" preserveAspectRatio="none">
+          <path fill="rgba(0,0,0,0.05)" d="M0,200 C480,120 960,240 1440,180 L1440,260 L0,260 Z" />
+        </svg>
+        <div
+          className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full opacity-20"
+          style={{ background: 'radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%)' }}
+        />
+        <div
+          className="absolute -bottom-20 -left-20 w-[400px] h-[400px] rounded-full opacity-15"
+          style={{ background: 'radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%)' }}
+        />
       </div>
 
-      <div className="relative w-full max-w-sm animate-fade-in">
-        <div className="flex justify-center mb-0 relative z-10">
-          <div className="btn-teal px-10 py-3 rounded-t-2xl">
-            <span className="font-orbitron font-bold text-white text-sm tracking-[0.15em]">REGISTER</span>
+      <div className="relative w-full max-w-sm animate-fade-in pt-4">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 z-20 ">
+          <div
+            className="px-12 py-3 rounded-sm shadow-xl"
+            style={{ background: 'rgba(20, 220, 200, 0.9)', backdropFilter: 'blur(10px)' }}
+          >
+            <span className="font-orbitron font-bold text-slate-800 text-sm tracking-[0.2em]">REGISTER</span>
           </div>
         </div>
 
-        <div className="glass-card rounded-3xl rounded-tl-none p-8 shadow-2xl shadow-black/50"
-          style={{ border: '1px solid rgba(20, 184, 166, 0.25)' }}>
+        <div
+          className="rounded-xl rounded-tl-none p-8 shadow-2xl"
+          style={{
+            background: 'rgba(10, 18, 40, 0.92)',
+            backdropFilter: 'blur(24px)',
+            border: '1px solid rgba(255,255,255,0.08)',
+            boxShadow: '0 25px 60px rgba(0,0,0,0.4)',
+          }}
+        >
 
-          <div className="flex justify-center mb-5 animate-slide-up stagger-1 opacity-0"
-            style={{ animationFillMode: 'forwards' }}>
-            <div className="w-20 h-20 rounded-full flex items-center justify-center animate-float"
-              style={{ background: 'rgba(15,23,42,0.8)', border: '2px solid rgba(20,184,166,0.3)' }}>
-              <svg className="w-12 h-12 text-slate-500" fill="currentColor" viewBox="0 0 24 24">
+          <div
+            className="flex justify-center mb-6 mt-6 animate-slide-up stagger-1 opacity-0"
+            style={{ animationFillMode: 'forwards' }}
+          >
+            <div className="w-20 h-20 rounded-full flex items-center justify-center "
+              style={{ background: 'rgba(20,184,166,0.12)', border: '2px solid rgba(20,184,166,0.35)' }}>
+              <svg className="w-12 h-12 text-teal-400 opacity-70" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z" />
               </svg>
             </div>
